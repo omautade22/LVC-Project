@@ -1,0 +1,118 @@
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns, adjust as needed */
+    grid-gap: 10px; /* Adjust the gap between images */
+  }
+  
+  .gallery-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hovereffect {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hovereffect img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .gallery-item {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 500px;
+  }
+  
+  .hovereffect {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hovereffect .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hovereffect img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-100px);
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+    padding: 10px;
+  }
+  
+  .hovereffect a.info {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    opacity: 0;
+    transition: all 0.4s ease;
+    margin: 10px 0 0;
+    padding: 7px 14px;
+  }
+  
+  .hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  .hovereffect:hover img {
+    transform: scale(1.2);
+  }
+  
+  .hovereffect:hover .overlay {
+    opacity: 1;
+  }
+  
+  .hovereffect:hover h2,
+  .hovereffect:hover a.info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hovereffect:hover a.info {
+    transition-delay: 0.2s;
+  }
+  

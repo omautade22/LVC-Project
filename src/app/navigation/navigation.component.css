@@ -1,0 +1,8 @@
+/* Add a background color and change text color to black */
+.navbar.navbar-light {
+    background-color: #007bff !important; /* Change this to your desired background color */
+}
+
+.navbar-nav a.nav-link, .navbar-brand {
+    color: black;
+}
